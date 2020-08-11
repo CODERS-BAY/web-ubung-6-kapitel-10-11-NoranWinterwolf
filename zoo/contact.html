@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;700&family=Merriweather:wght@900&display=swap" rel="stylesheet">     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="description" content="Zoo-Erlebniswelt">
+    <meta name="robot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="pageContainer">
+        <div id="wrapContent">
+    <header>
+        <div class="headbanner"><div id="headText"><div class="icon">Erlebnis-Zoo</div></div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Infos</a></li>
+                <li><a href="#" class="aktuell">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="mainHeader">Sie haben Fragen oder Anregungen?</h1>
+        <article class="fullsize">
+        <p class="mainText">
+            Bitte schreiben Sie uns! Wir freuen uns über jede Anregung, wie wir unseren Zoo noch besserer machen können und
+            Ihnen das schönste Erlebnis bieten können.
+        </p>
+        
+        <form action="ausgabe.html" method="get">
+            <fieldset>
+                <legend>Kontaktformular</legend>
+            <div class="formGrid">
+                <label class="anredeLabel">Anrede:</label>
+                <div class="anredeChoice">
+                    <input type="radio" name="anrede" id="herr" value="herr">
+                    <label for="herr">Herr</label>
+                    <input type="radio" name="anrede" id="frau" value="frau">
+                    <label for="frau">Frau</label>
+                    <input type="radio" name="anrede" id="sonstiges" value="sonstiges">
+                    <label for="sonstiges">Sonstiges</label>
+                </div>
+            
+            
+                <label for="name">Name*:</label>
+                <input class="text" type="text" name="name" id="name" required> 
+            
+            
+                <label for="email">E-Mail*:</label>
+                <input class="text" type="email" name="email" id="email" required>
+            
+            
+                <label for="besuchAm">Besuchstag:</label>
+                <input class="text" type="date" name="besuchAm" id="besuchAm">
+            
+            
+                <label class="zeitLabel">Besuchszeit:</label>
+                <div class="von"><label for="vonZeit">von:</label>
+                <input type="time" name="vonZeit" id="vonZeit"></div>
+                <div class="bis"><label for="bisZeit">bis:</label>
+                <input type="time" name="bisZeit" id="bisZeit"></div>
+            
+            
+                <label for="like">Erlebnis:</label>
+                <div class="noLike">Schlecht</div><input  type="range" name="like" id="like"><div class="like">Toll</div>
+            
+            
+                <label class="empfohlenLabel">Empfehlen Sie uns weiter?</label>
+                <div class="empfohlenChoice">
+                    <input type="radio" name="empfehlung" id="ja" value="ja">
+                    <label for="ja">Ja, sicher!</label>
+                    <input type="radio" name="empfehlung" id="nein" value="nein">
+                    <label for="nein">Nein, leider nicht...</label>
+                </div>
+            
+                <label for="favourite">Lieblingstier:</label>
+                <input class="text" type="text" list="animallist" name="favourite" id="favourite">
+                <datalist id="animallist">
+                    <option value="Löwen">
+                    <option value="Gorillas">
+                    <option value="Grauwölfe">
+                    <option value="Tundrawölfe">
+                    <option value="Timberwölfe">
+                    <option value="Braunbären">
+                    <option value="Schwarzbären">
+                    <option value="Flamingos">
+                    <option value="Pfau">
+                    <option value="Pinguine">
+                    <option value="Spinnen">
+                    <option value="Bienen">
+                    <option value="Schmetterlinge">
+                </datalist>
+            
+            
+                <label for="nachricht">Ihre Nachricht an uns*:</label>
+                <textarea rows="10" cols="40" name="nachricht" id="nachricht" required></textarea>
+            
+            
+                <label for="besuchArt">Art des Besuchs:</label>
+                <select name="besuchArt" id="besuchArt">
+                    <option value="family">Familienausflug</option>
+                    <option value="alone">Allein unterwegs</option> 
+                    <option value="group">Gruppenausflug</option>
+                    <option value="friends">Ausflug mit Freunden</option>
+                    <option value="other">sonstiger Grund</option>
+                </select>
+            </div>
+            
+                <input  type="submit" value="Senden">
+                <input type="reset" value="Daten löschen">
+            
+        </fieldset>
+        </form>
+        </article>
+</main>
+        </div>
+<footer>
+    <p>&copy; 2020 Zoo-Erlebniswelten</p>
+</footer>
+        </div>
+</body>
+</html>
