@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulare</title>
+</head>
+<body>
+  <div id="ausgabe"></div>
+  <script>
+    var url = document.location.href,
+      params = url.split('?')[1].split('&'),
+      data = {},
+      tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+      tmp = params[i].split('=');
+      data[tmp[0]] = tmp[1];
+    }
+
+    var output = '';
+    for (var property in data) {
+      output += property + ': ' + decodeURIComponent(data[property]) + '<br> ';
+    }
+    document.getElementById('ausgabe').innerHTML = output;
+  </script>
+
+</body>
+</html>
